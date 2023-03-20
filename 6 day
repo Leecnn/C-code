@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    float x,t;
+    int A;
+    double b;
+    scanf("%f%f",&x,&t);
+    A=t*10;
+    switch (A)
+    {
+        case 5:b=x*(1+0.0255/2);
+        break;
+        case 10:b=x*(1+0.0275);
+            break;
+        case 20:b=x*(1+0.0335*2);
+            break;
+        case 30: b=x*(1+0.04*3);
+            break;
+        case 50:b=x*(1+0.0475*5);
+            break;
+        default:b=0;
+            break;
+    }
+    printf("%.2f",b);
+}   
