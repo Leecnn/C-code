@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int x,a,b,c,d,e;
+    scanf("%d",&x);
+    a=x/1000;
+    b=(x-a*1000)/100;
+    c=(x-a*1000-b*100)/10;
+    d=(x-a*1000-b*100-c*10)/1;
+    e=a*a*a+b*b*b+c*c*c+d*d*d;
+    printf("%d\n",e);
+}
