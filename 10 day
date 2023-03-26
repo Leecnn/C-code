@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    float m,l;
+    int n;
+    printf("Input length and days:\n");
+    scanf("%f,%d",&m,&n);
+    l=m*pow(0.5,n);
+    printf("length=%.5f\n",l);
+}
